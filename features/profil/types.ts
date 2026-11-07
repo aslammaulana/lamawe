@@ -78,3 +78,4 @@ export interface TupoksiRowItem {
   dasarHukum: string;
   status: string;
 }
+

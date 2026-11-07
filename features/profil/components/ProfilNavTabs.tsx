@@ -35,3 +35,4 @@ export function ProfilNavTabs({ activeTab }: ProfilNavTabsProps) {
     </div>
   );
 }
+

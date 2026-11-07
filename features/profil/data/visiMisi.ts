@@ -82,3 +82,4 @@ export const falsafahData = {
   deskripsi:
     "Pemerintah Gampong Lam Awe senantiasa memadukan ketegasan hukum formal negara dengan kearifan adat istiadat Aceh, menjunjung tinggi musyawarah mufakat di meunasah, serta menjaga keharmonisan antar warga dan jurong.",
 };
+

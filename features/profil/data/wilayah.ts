@@ -120,3 +120,4 @@ export const petaWilayahCoordinates = {
   embedUrl:
     "https://www.openstreetmap.org/export/embed.html?bbox=95.2600%2C5.5200%2C95.3100%2C5.5600&layer=mapnik&marker=5.5392%2C95.2847",
 };
+

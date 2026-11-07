@@ -22,3 +22,4 @@ export const timelineSejarahData: TimelineItem[] = [
     desc: "Peluncuran portal web resmi untuk transparansi anggaran APBDes dan pelayanan administrasi kependudukan digital.",
   },
 ];
+

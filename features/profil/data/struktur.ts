@@ -269,3 +269,4 @@ export const downloadSotkData = {
     "Dokumen resmi memuat lampiran bagan grafis garis koordinasi, tupoksi lengkap, dan salinan Surat Keputusan.",
   lastUpdated: "15 Januari 2024",
 };
+
