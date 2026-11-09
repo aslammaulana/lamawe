@@ -65,3 +65,4 @@ export const ppidContactInfo = {
   phone: "0812-3456-789",
   jamLayanan: "Senin – Jumat, 08:30 – 16:00 WIB",
 };
+

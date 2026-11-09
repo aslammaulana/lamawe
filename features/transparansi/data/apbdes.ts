@@ -129,3 +129,4 @@ export const apbdesDownloads: ApbdesDownloadItem[] = [
     desc: "Tabel pembukuan serapan anggaran per kegiatan terperinci.",
   },
 ];
+

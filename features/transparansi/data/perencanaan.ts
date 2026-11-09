@@ -80,3 +80,4 @@ export const musrenbangStages = [
       "Program prioritas RKP dituangkan menjadi pos belanja resmi dalam Qanun APBDes tahun anggaran berikutnya.",
   },
 ];
+
