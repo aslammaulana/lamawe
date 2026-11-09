@@ -1,19 +1,21 @@
 import Link from "next/link";
+import Image from "next/image";
 import { MapPin, Phone, Mail, ExternalLink } from "lucide-react";
 import { navItems } from "@/lib/navigation";
 
 export function Footer() {
   return (
-    <footer className="bg-[#1E293B] text-slate-300">
+    <footer className="bg-slate-900 text-slate-300">
       <div className="mx-auto max-w-7xl px-4 py-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-
           {/* Kolom 1 — Identitas */}
           <div>
             <div className="flex items-center gap-3 mb-5">
-              <img
+              <Image
                 src="https://lh3.googleusercontent.com/aida/AEtjO1UmxF7opjyaF7l15Wuow3lrCQciNRnWb2JlDD5hzagw2fTCY-REjztFeMqcUbQLyGg8L4c-4BbZ1vi7-8fXpriezNOPX6kmeGxhx22Ymg7h9jX5nbZwZ3r55Np51hAsIj3V0odP5cGow3ZfTWEztKx6UZDQB5rGlVFUF-iHLgi5DQjk9ZOssasOr3CUoyQAC4Te9htje-UiGIh5gEmVN0MG1xoS1F78rNs6NUrW9FQFOw"
                 alt="Lambang Desa Lam Awe"
+                width={36}
+                height={36}
                 className="h-9 w-auto object-contain shrink-0 bg-white/10 p-1 rounded-md"
               />
               <div className="leading-tight">
@@ -23,15 +25,17 @@ export function Footer() {
             </div>
             <address className="not-italic space-y-2.5 text-sm">
               <div className="flex items-start gap-2">
-                <MapPin size={15} className="text-[#2176CA] mt-0.5 shrink-0" />
+                <MapPin size={15} className="text-accent-blue mt-0.5 shrink-0" />
                 <span>
-                  Jl. Meulaboh - Banda Aceh KM 7.5, Gampong Lam Awe,<br />
-                  Kec. Peukan Bada, Kab. Aceh Besar,<br />
+                  Jl. Meulaboh - Banda Aceh KM 7.5, Gampong Lam Awe,
+                  <br />
+                  Kec. Peukan Bada, Kab. Aceh Besar,
+                  <br />
                   Aceh 23351
                 </span>
               </div>
               <div className="flex items-center gap-2">
-                <Phone size={15} className="text-[#2176CA] shrink-0" />
+                <Phone size={15} className="text-accent-blue shrink-0" />
                 <a
                   href="tel:+626517552019"
                   className="hover:text-white transition-colors font-mono"
@@ -40,7 +44,7 @@ export function Footer() {
                 </a>
               </div>
               <div className="flex items-center gap-2">
-                <Mail size={15} className="text-[#2176CA] shrink-0" />
+                <Mail size={15} className="text-accent-blue shrink-0" />
                 <a
                   href="mailto:kontak@desa-lamawe.id"
                   className="hover:text-white transition-colors"
@@ -59,7 +63,7 @@ export function Footer() {
                 <li key={item.label}>
                   <Link
                     href={item.href}
-                    className="hover:text-[#2176CA] transition-colors"
+                    className="hover:text-accent-blue transition-colors"
                   >
                     {item.label}
                   </Link>
@@ -75,22 +79,22 @@ export function Footer() {
             </h3>
             <ul className="space-y-2 text-sm mb-6">
               <li>
-                <Link href="/layanan" className="hover:text-[#2176CA] transition-colors">
+                <Link href="/layanan" className="hover:text-accent-blue transition-colors">
                   Daftar Layanan
                 </Link>
               </li>
               <li>
-                <Link href="/layanan/pengaduan" className="hover:text-[#2176CA] transition-colors">
+                <Link href="/layanan/pengaduan" className="hover:text-accent-blue transition-colors">
                   Pengaduan
                 </Link>
               </li>
               <li>
-                <Link href="/layanan/status" className="hover:text-[#2176CA] transition-colors">
+                <Link href="/layanan/status" className="hover:text-accent-blue transition-colors">
                   Cek Status Layanan
                 </Link>
               </li>
               <li>
-                <Link href="/kontak" className="hover:text-[#2176CA] transition-colors">
+                <Link href="/kontak" className="hover:text-accent-blue transition-colors">
                   Kontak
                 </Link>
               </li>
@@ -100,17 +104,17 @@ export function Footer() {
             </h3>
             <ul className="space-y-2 text-sm">
               <li>
-                <Link href="/transparansi/apbdes" className="hover:text-[#2176CA] transition-colors">
+                <Link href="/transparansi/apbdes" className="hover:text-accent-blue transition-colors">
                   APBDes
                 </Link>
               </li>
               <li>
-                <Link href="/transparansi/laporan" className="hover:text-[#2176CA] transition-colors">
+                <Link href="/transparansi/laporan" className="hover:text-accent-blue transition-colors">
                   Laporan
                 </Link>
               </li>
               <li>
-                <Link href="/transparansi/ppid" className="hover:text-[#2176CA] transition-colors">
+                <Link href="/transparansi/ppid" className="hover:text-accent-blue transition-colors">
                   PPID
                 </Link>
               </li>
@@ -135,7 +139,7 @@ export function Footer() {
                     href={link.href}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center gap-1.5 hover:text-[#2176CA] transition-colors"
+                    className="flex items-center gap-1.5 hover:text-accent-blue transition-colors"
                   >
                     {link.label}
                     <ExternalLink size={12} className="shrink-0" />
@@ -179,4 +183,3 @@ export function Footer() {
     </footer>
   );
 }
-

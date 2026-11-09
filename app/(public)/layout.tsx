@@ -8,7 +8,7 @@ export default function PublicLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <div className="flex min-h-screen flex-col bg-[#F5F9FF] text-[#3A3F3E] font-sans selection:bg-[#E1EDFC] selection:text-[#1769C2]">
+    <div className="flex min-h-screen flex-col bg-background text-foreground font-sans selection:bg-border-soft selection:text-btn-blue">
       <Header />
       <main id="main-content" className="flex-1">
         {children}
@@ -18,4 +18,3 @@ export default function PublicLayout({
     </div>
   );
 }
-

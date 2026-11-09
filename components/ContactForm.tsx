@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { Send, CheckCircle, AlertCircle } from "lucide-react";
+import { Send, CheckCircle } from "lucide-react";
 
 export function ContactForm() {
   const [submitted, setSubmitted] = useState(false);
@@ -19,31 +19,31 @@ export function ContactForm() {
   };
 
   return (
-    <div className="bg-white rounded-2xl shadow-xs border border-[#E1EDFC] p-6 sm:p-8 flex flex-col gap-5">
+    <div className="bg-surface rounded-2xl shadow-xs border border-border-soft p-6 sm:p-8 flex flex-col gap-5">
       <div className="flex flex-col gap-1">
-        <h2 className="text-base sm:text-lg font-bold text-[#252525]">
+        <h2 className="text-base sm:text-lg font-bold text-heading">
           Kirim Pesan / Pengaduan Cepat
         </h2>
-        <p className="text-xs text-[#3A3F3E]/80">
+        <p className="text-xs text-foreground/80">
           Pesan Anda diteruskan langsung ke sekretariat desa untuk ditindaklanjuti.
         </p>
       </div>
 
       {submitted ? (
-        <div className="p-4 rounded-xl bg-[#E1EDFC] text-[#1769C2] text-xs flex items-start gap-3 border border-[#1769C2]/20">
+        <div className="p-4 rounded-xl bg-border-soft/60 text-btn-blue text-xs flex items-start gap-3 border border-btn-blue/20">
           <CheckCircle size={22} className="shrink-0 mt-0.5" />
           <div className="space-y-1">
-            <span className="font-bold text-sm block text-[#252525]">
+            <span className="font-bold text-sm block text-heading">
               Pesan Berhasil Terkirim!
             </span>
-            <p className="text-[#3A3F3E] leading-relaxed">
+            <p className="text-foreground leading-relaxed">
               Terima kasih. Petugas sekretariat gampong akan memverifikasi dan
               membalas melalui nomor WhatsApp Anda dalam 1x24 jam kerja.
             </p>
             <button
               type="button"
               onClick={() => setSubmitted(false)}
-              className="mt-3 text-xs font-semibold text-[#1769C2] underline"
+              className="mt-3 text-xs font-semibold text-btn-blue underline"
             >
               Kirim pesan lain
             </button>
@@ -62,7 +62,7 @@ export function ContactForm() {
 
           {/* Nama Lengkap */}
           <div className="flex flex-col gap-1.5">
-            <label htmlFor="sender-name" className="font-semibold text-[#252525]">
+            <label htmlFor="sender-name" className="font-semibold text-heading">
               Nama Lengkap Sesuai KTP <span className="text-rose-600">*</span>
             </label>
             <input
@@ -70,13 +70,13 @@ export function ContactForm() {
               type="text"
               required
               placeholder="Contoh: Teuku Iskandar"
-              className="h-11 px-3 bg-[#F5F9FF] border border-[#E1EDFC] rounded-lg text-[#252525] placeholder:text-slate-400 outline-hidden focus:border-[#1769C2] focus:bg-white transition"
+              className="h-11 px-3 bg-background border border-border-soft rounded-lg text-heading placeholder:text-slate-400 outline-hidden focus:border-btn-blue focus:bg-surface transition"
             />
           </div>
 
           {/* Nomor WhatsApp */}
           <div className="flex flex-col gap-1.5">
-            <label htmlFor="sender-phone" className="font-semibold text-[#252525]">
+            <label htmlFor="sender-phone" className="font-semibold text-heading">
               Nomor WhatsApp Aktif <span className="text-rose-600">*</span>
             </label>
             <input
@@ -84,23 +84,23 @@ export function ContactForm() {
               type="tel"
               required
               placeholder="08xxxxxxxxxx"
-              className="h-11 px-3 bg-[#F5F9FF] border border-[#E1EDFC] rounded-lg font-mono text-[#252525] placeholder:text-slate-400 outline-hidden focus:border-[#1769C2] focus:bg-white transition"
+              className="h-11 px-3 bg-background border border-border-soft rounded-lg font-mono text-heading placeholder:text-slate-400 outline-hidden focus:border-btn-blue focus:bg-surface transition"
             />
-            <span className="text-[11px] text-[#3A3F3E]/70">
+            <span className="text-[11px] text-foreground/70">
               Untuk pengiriman konfirmasi tindak lanjut aduan.
             </span>
           </div>
 
           {/* Kategori Urusan */}
           <div className="flex flex-col gap-1.5">
-            <label htmlFor="sender-subject" className="font-semibold text-[#252525]">
+            <label htmlFor="sender-subject" className="font-semibold text-heading">
               Klasifikasi Urusan <span className="text-rose-600">*</span>
             </label>
             <select
               id="sender-subject"
               required
               defaultValue=""
-              className="h-11 px-3 bg-[#F5F9FF] border border-[#E1EDFC] rounded-lg text-[#252525] outline-hidden focus:border-[#1769C2] focus:bg-white transition cursor-pointer"
+              className="h-11 px-3 bg-background border border-border-soft rounded-lg text-heading outline-hidden focus:border-btn-blue focus:bg-surface transition cursor-pointer"
             >
               <option value="" disabled>
                 Pilih Klasifikasi Kepentingan
@@ -123,7 +123,7 @@ export function ContactForm() {
 
           {/* Isi Pesan */}
           <div className="flex flex-col gap-1.5">
-            <label htmlFor="sender-message" className="font-semibold text-[#252525]">
+            <label htmlFor="sender-message" className="font-semibold text-heading">
               Isi Pesan / Keterangan Aduan <span className="text-rose-600">*</span>
             </label>
             <textarea
@@ -131,15 +131,15 @@ export function ContactForm() {
               required
               rows={4}
               placeholder="Jelaskan kebutuhan atau kendala Anda secara ringkas dan jelas..."
-              className="p-3 bg-[#F5F9FF] border border-[#E1EDFC] rounded-lg text-[#252525] placeholder:text-slate-400 outline-hidden focus:border-[#1769C2] focus:bg-white transition resize-none"
-            ></textarea>
+              className="p-3 bg-background border border-border-soft rounded-lg text-heading placeholder:text-slate-400 outline-hidden focus:border-btn-blue focus:bg-surface transition resize-none"
+            />
           </div>
 
           {/* Submit Button */}
           <button
             type="submit"
             disabled={loading}
-            className="h-11 w-full rounded-lg bg-[#1769C2] hover:bg-[#12549E] text-white font-semibold text-xs sm:text-sm flex items-center justify-center gap-2 shadow-xs transition-all active:scale-[0.99] disabled:opacity-70"
+            className="h-11 w-full rounded-lg bg-btn-blue hover:bg-btn-blue-hover text-white font-semibold text-xs sm:text-sm flex items-center justify-center gap-2 shadow-xs transition-all active:scale-[0.99] disabled:opacity-70"
           >
             <Send size={15} />
             <span>{loading ? "Mengirim Pesan..." : "Kirim Pesan Sekarang"}</span>
@@ -149,4 +149,3 @@ export function ContactForm() {
     </div>
   );
 }
-
