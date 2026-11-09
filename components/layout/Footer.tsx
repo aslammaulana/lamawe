@@ -12,7 +12,7 @@ export function Footer() {
           <div>
             <div className="flex items-center gap-3 mb-5">
               <Image
-                src="https://lh3.googleusercontent.com/aida/AEtjO1UmxF7opjyaF7l15Wuow3lrCQciNRnWb2JlDD5hzagw2fTCY-REjztFeMqcUbQLyGg8L4c-4BbZ1vi7-8fXpriezNOPX6kmeGxhx22Ymg7h9jX5nbZwZ3r55Np51hAsIj3V0odP5cGow3ZfTWEztKx6UZDQB5rGlVFUF-iHLgi5DQjk9ZOssasOr3CUoyQAC4Te9htje-UiGIh5gEmVN0MG1xoS1F78rNs6NUrW9FQFOw"
+                src="/logos/logo-lamawe.png"
                 alt="Lambang Desa Lam Awe"
                 width={36}
                 height={36}
